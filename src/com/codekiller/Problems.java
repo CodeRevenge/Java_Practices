@@ -150,7 +150,11 @@ public class Problems {
     }
 
     void prob08() {
-
+        int i = 1;
+        while (scanner.hasNext()) {
+            System.out.printf("%d %s%n",i, scanner.nextLine());
+            i++;
+        }
     }
 
     void prob09() {
