@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Problems {
     private static final Scanner scanner = new Scanner(System.in);
 
+
+
     public Problems() {
     }
 
@@ -157,11 +159,32 @@ public class Problems {
         }
     }
 
-    void prob09() {
+    static boolean flag;
+    static int B, H;
+    static {
+        try {
+            flag = false;
+            B = scanner.nextInt();
+            H = scanner.nextInt();
+            if (B <= 0 || H <= 0) {
+                throw new Exception("java.lang.Exception: Breadth and height must be positive");
+            } else {
+                flag = true;
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
+    void prob09() {
+        if(flag){
+            int area=B*H;
+            System.out.print(area);
+        }
     }
 
     void prob10() {
-
+        int n = scanner.nextInt();
+        String s = "" + n;
     }
 }
