@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         Problems problems = new Problems();
-        problems.run(4);
+        problems.run(7);
     }
 }
